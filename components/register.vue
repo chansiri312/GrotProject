@@ -91,7 +91,7 @@
     }
   </script> -->
 <template>
-  <div>
+  <b-container>
     <br />
     <br />
     <h3 align="center">สร้างบัญชีผู้ใช้</h3>
@@ -197,7 +197,7 @@
         >บันทึก</b-button
       >
     </div>
-  </div>
+  </b-container>
 </template>
 
 <script>

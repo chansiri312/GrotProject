@@ -1,5 +1,5 @@
 <template>
-    <table1/>
+    <table5/>
   </template>
   
   <script>

@@ -2,7 +2,7 @@
 <template>
   <div>
     <b-card body-bg-variant="info">
-      <b-icon icon="list" align="left"></b-icon>
+      
       <b-container class="bv-example-row">
         <b-row>
           <b-col>
@@ -120,7 +120,7 @@
         </div>
       </div>
     </nav> -->
-    <div class="card">
+    <b-container class="card">
       <div class="card-body">
         <div>
           <b-carousel
@@ -147,22 +147,19 @@
             >
             </b-carousel-slide>
 
-            <b-carousel-slide
-              img-src="https://static.posttoday.com/media/content/2020/09/14/CB75279F5D558B74FE70121EAFC894F6_1000.png"
-            ></b-carousel-slide>
           </b-carousel>
         </div>
       </div>
-    </div>
+    </b-container>
+    <br />
 
     <h3 align="center">แบบบันทึกข้อมูลประจำฟาร์ม</h3>
-    <br />
     <br />
     <b-container class="bv-example-row">
       <b-row>
         <b-col>
-          <div class="card">
-            <div class="card-body">แบบบันทึกข้อมูลทะเบียนประวัติแพะนม</div>
+          <div class="card" >
+            <div class="card-body" ><b-button variant="white" href="../table" > แบบบันทึกข้อมูลทะเบียนประวัติแพะนม</b-button></div>
           </div>
         </b-col>
       </b-row>
@@ -171,9 +168,9 @@
       <br />
 
       <b-col>
-        <div class="card">
-          <div class="card-body">
-            แบบบันทึกข้อมูลประวัติการให้ผลผลิต (รายฟาร์ม)
+        <div class="card" >
+          <div class="card-body"><b-button variant="white" href="../table2">
+            แบบบันทึกข้อมูลประวัติการให้ผลผลิต (รายฟาร์ม)</b-button>
           </div>
         </div>
       </b-col>
@@ -183,8 +180,8 @@
 
       <b-col>
         <div class="card">
-          <div class="card-body">
-            แบบบันทึกข้อมูลประวัติการให้ผลผลิต (รายตัว)
+          <div class="card-body"><b-button variant="white" href="../table3">
+            แบบบันทึกข้อมูลประวัติการให้ผลผลิต (รายตัว)</b-button>
           </div>
         </div>
       </b-col>
@@ -194,7 +191,7 @@
 
       <b-col>
         <div class="card">
-          <div class="card-body">แบบบันทึกข้อมูลการสืบพันธุ์ของแม่พันธุ์</div>
+          <div class="card-body"><b-button variant="white" href="../table4">แบบบันทึกข้อมูลการสืบพันธุ์ของแม่พันธุ์</b-button></div>
         </div>
       </b-col>
       <br />
@@ -202,8 +199,8 @@
 
       <b-col>
         <div class="card">
-          <div class="card-body">
-            แบบบันทึกข้อมูลการรับ-จ่ายเวชภัณฑ์และสารเคมี
+          <div class="card-body"><b-button variant="white" href="../table5">
+            แบบบันทึกข้อมูลการรับ-จ่ายเวชภัณฑ์และสารเคมี</b-button>
           </div>
         </div>
       </b-col>
@@ -213,8 +210,8 @@
 
       <b-col>
         <div class="card">
-          <div class="card-body">
-            แบบบันทึกข้อมูลการใช้วัคซีน และการถ่ายพยาธิ (ทั้งฝูง)
+          <div class="card-body"><b-button variant="white" href="../table6">
+            แบบบันทึกข้อมูลการใช้วัคซีน และการถ่ายพยาธิ (ทั้งฝูง)</b-button>
           </div>
         </div>
       </b-col>
@@ -224,7 +221,7 @@
 
       <b-col>
         <div class="card">
-          <div class="card-body">แบบบันทึกข้อมูลการรักษาโรค</div>
+          <div class="card-body"><b-button variant="white" href="../table7">แบบบันทึกข้อมูลการรักษาโรค</b-button></div>
         </div>
       </b-col>
 
@@ -233,7 +230,7 @@
 
       <b-col>
         <div class="card">
-          <div class="card-body">การบันทึกข้อมูลบัญชีฟาร์ม</div>
+          <div class="card-body"><b-button variant="white" href="../table8">การบันทึกข้อมูลบัญชีฟาร์ม</b-button></div>
         </div>
       </b-col>
 
@@ -242,7 +239,7 @@
 
       <b-col>
         <div class="card">
-          <div class="card-body">แบบบันทึกประวัติบุคลากร</div>
+          <div class="card-body"><b-button variant="white" href="../table9">แบบบันทึกประวัติบุคลากร</b-button></div>
         </div>
       </b-col>
     </b-container>
@@ -273,6 +270,9 @@ export default {
     };
   },
   methods: {
+    // table1(){
+    //   this.$router.push("/table");
+    // },
     prev() {
       this.$refs.myCarousel.prev();
     },
